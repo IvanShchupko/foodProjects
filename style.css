@@ -1,0 +1,159 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
+body {
+    background-color: #9797ff; 
+    color: #fff;
+}
+/* .prolog, .food{
+    width: 600px;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px auto;
+}
+.banner{
+    height: 150px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.nav{
+    border: 1px solid #000;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    color: #fff;
+    font-size: 25px;
+}
+.infoBlock{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.weBlock{
+    background-color: #6b6bda;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.blockImg{
+    width: 150px;
+    height: 150px;
+}
+.blockText{
+    font-size: 30px;
+} */
+.prologe {
+    margin: 50px auto;
+    font-size: 35px;
+    text-align: center;
+    width: 600px;
+}
+.banner {
+    height: 300px;
+    border: 5px solid #000;
+}
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.programMembers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2e2eb5;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.member{
+    display: flex;
+}
+.member:nth-child(2){
+    flex-direction: row-reverse;
+    text-align: end;
+}
+.us_img {
+    height: 300px;
+    border: 12px ridge #222247;
+    border-radius: 5px;
+}
+.us_text {
+    font-size: 35px;
+    padding: 50px;
+}
+.food_prologe {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px 0;
+}
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2e2eb5;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.dish_name {
+    font-size: 40px;
+    text-align: center;
+}
+.dish_info {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.dish_text {
+    width: 600px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.dish_img {
+    width: 500px;
+}
+.dish_receptInput {
+    text-align: center;
+    font-size: 40px;
+}
+.ingredients {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+}
+.ingr {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px 5px;
+    background-color: #222247;
+}
+.recept {
+    margin-bottom: 40px;
+}
+.step {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.video {
+    margin: 50px auto;
+}
