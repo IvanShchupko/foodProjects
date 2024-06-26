@@ -11,6 +11,42 @@ body {
     background-color: #9797ff; 
     color: #fff;
 }
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #222247;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    padding: 0 20px;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 40px;
+}
+.header.hide {
+    transform: translateY(-150px);
+}
+
+.head_home {
+    font-size: 60px;
+    color: #fff;
+    transition: 0.5s;
+}
+.head_list {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.head_point {
+    color: #fff;
+    transition: 0.5s;
+}
+
 /* .prolog, .food{
     width: 600px;
     font-size: 25px;
@@ -58,7 +94,7 @@ body {
     font-size: 30px;
 } */
 .prologe {
-    margin: 50px auto;
+    margin: 150px auto;
     font-size: 35px;
     text-align: center;
     width: 600px;
@@ -124,7 +160,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    margin: 50px;
 }
 .dish_text {
     width: 50%;
@@ -159,14 +195,14 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 .step {
     font-size: 25px;
     margin-top: 20px;
 }
 .video {
-    width: 95%;
+    width: 80%;
     margin: 50px auto;
 }
 
@@ -189,10 +225,25 @@ body {
         margin-top: 40px;
         width: 70%;
     }
+    .header {
+        font-size: 25px;
+    }
+    .head_home {
+        font-size: 35px;
+    }
+    .head_list {
+        width: 75%;
+    }
 }
 @media(max-width: 650px){
     .prologe {
         width: 90%;
+    }
+    .header {
+        font-size: 20px;
+    }
+    .head_home {
+        font-size: 30px;
     }
 }
 @media(max-width: 550px){
@@ -204,6 +255,12 @@ body {
         flex-direction: column;
         text-align: center;
         margin-top: 10px;
+    }
+    .header {
+        display: none;
+    }
+    .prologe {
+        margin: 50px auto;
     }
 }
 @media(max-width: 400px){
@@ -217,6 +274,6 @@ body {
 }
 @media(max-width: 370px){
     .dish {
-        padding: 20px 5px;
+        padding: 5px;
     }
 }

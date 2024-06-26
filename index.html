@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Narodne jedla</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -36,10 +36,17 @@
             <p class="rec_text"></p>
         </div>
     </div> -->
-
-    <p class="prologe">Podla programu StandByME sme robime miniproject. Vyriesili ze to bude varenie jedla z nasych narodnych kuchien...</p>
+    <header class="header">
+        <a href="#home" class="head_home">Home</a>
+        <ul class="head_list">
+            <a href="#we" class="head_point">O nas</a>
+            <a href="#borsc" class="head_point">Boršč s fazuľou</a>
+            <a href="#halusky" class="head_point">Bryndzové halušky</a>
+        </ul>
+    </header>
+    <p class="prologe" id="home">Spoločné sme sa stretli v programe StandByME, kde bolo našou úlohou vytvoriť miniprojekt, na ľubovoľnú tému. My sme si zvolili varenie jedál z našich národných kuchýň. Vytvorili sme video-recept, ktorý nájdete na konci stránky a rovnako sme tu nechali recepty na obe jedlá pre vás :)</p>
     <div class="banner"></div>
-    <div class="content">
+    <div class="content" id="we">
         <div class="programMembers">
             <div class="member">
                 <img src="./imgs/ivan.jpg" alt="" class="us_img">
@@ -51,11 +58,11 @@
             </div>
         </div>
         
-        <p class="food_prologe">Pre project sme vybrali taki jedla...</p>
-        <div class="dish">
+        <p class="food_prologe">Pre náš projekt sme vybrali tieto jedlá:</p>
+        <div class="dish" id="borsc">
             <h2 class="dish_name">Boršč</h2>
             <div class="dish_info">
-                <p class="dish_text">- velmi zname ukrainske jedlo, ktore varia vo vsetkych castiach Ukraini... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat veritatis quia velit voluptatem, aspernatur eos qui id tenetur quam deleniti officiis, perspiciatis quo accusamus fuga voluptatum eveniet odio? Rerum eius delectus provident itaque libero dicta? Porro ipsum eveniet at repellat, veniam nisi doloremque commodi assumenda illo harum ipsam aut! Quae?</p>
+                <p class="dish_text">- je tradičná polievka, ktorú nájdete v ruskej a ukrajinskej kuchyni. Jej základ tvorí vývar z kostí a mäsa a zmes osmaženej zeleniny, kde hlavnú úlohu zohráva červená repa. Polievky podobné boršču sa varia aj v ďalších krajinách bývalého Sovietskeho zväzu, Poľsku (barszcz) a Bulharsku.</p>
                 <img src="./imgs/borsc.jpg" alt="" class="dish_img">
             </div>
             <p class="dish_receptInput">Ak chcete uvarit botsc budete potrebovat:</p>
@@ -79,56 +86,60 @@
             </ul>
             <p class="dish_receptInput">Ak chcete uvarit botsc musite ist takimito krokmi:</p>
             <ul class="recept">
-                <li class="step">1. V prvej fáze varenia musíme fazuľu uvariť. Cez noc sme ho vopred namočili. Preto z nej scedíme vodu, nalejeme do hrnca, pridáme 1,5 litra vody a dáme variť na oheň.</li>
-                <li class="step">2. Kým sa fazuľa varí, musíme si pripraviť všetku zeleninu na varenie. Čistíme najmä mrkvu, cviklu a cibuľu. Repa a mrkva by mali byť nakrájané na prúžky. Nakrájajte cibuľu nožom, kým nebude vyzerať ako kocky. </li>
-                <li class="step">3. Kapustu umyjeme vodou. Nakrájajte ho nožom na malé prúžky. Paradajky je potrebné skrútiť cez mlynček na mäso. </li>
-                <li class="step">4. Teraz zohrejte panvicu. Tu nalejeme rastlinný olej. Posielame sem cibuľu, ktorú je potrebné vyprážať, kým nebude priehľadná. Potom pridajte pásiky mrkvy a smažte asi 3-4 minúty. Pridajte sladkú papriku a smažte ďalšie 2-3 minúty. Naša prvá pečienka je pripravená. Dáme na tanier. </li>
-                <li class="step">5. Ďalej na panvicu nalejte olej, zohrejte ho, nalejte slamky z cvikly. Smažte niekoľko minút. Tu pridajte soľ, cukor, paradajkový pretlak a citrónovú šťavu. Miešajte, prikryte pokrievkou a dusíme, kým nebude pripravený. </li>
-                <li class="step">6. Keď je fazuľa uvarená, pridáme k nej kapustu a soľ. 5 minút po varení posielame pečenie s mrkvou a cibuľou na panvicu. Nechajte hmotu zovrieť a potom varte ďalších 5 minút. </li>
-                <li class="step">7. Hneď ako je kapusta uvarená, pridáme do panvice kúsky cvikly. Boršč varte 1-2 minúty. Ochutnajte a upravte množstvo všetkých korenín. Vypnite oheň. </li>
-                <li class="step">8. Po 20-30 minútach bol boršč vylúhovaný. Nalejte do tanierov, posypte zeleňou a podávajte.</li>
+                <li class="step">1. Prvým krokom pri varení je nechať variť fazuľu. (Fazuľa sa predtým však musí nechať cez noc vo vode) Fazuľu scedíme, vložíme do hrnca, pridáme 1,5 litra vody a postavíme na oheň.</li>
+                <li class="step">2. Kým sa fazuľa varí, musíme pripraviť všetku zeleninu na varenie. 
+                    Hlavne ošúpeme mrkvu, červenú repu a cibuľu. 
+                    Červenú repu a mrkvu nakrájame na pásiky. Cibuľu nakrájame nožom na kocky.</li>
+                <li class="step">3. Kapustu umyjeme vodou. Nakrájame ju nožom na malé pásiky. Paradajky pretlačíme cez mlynček na mäso alebo použijeme pretlak.</li>
+                <li class="step">4. Teraz rozohrejeme panvicu. Nalejeme do nej rastlinný olej. Pridáme cibuľu, ktorú je potrebné smažiť, kým nie je priehľadná. Potom pridáme pásiky mrkvy a smažíme asi 3 - 4 minúty. Pridáme papriku a smažíme ďalšie 2-3 minúty. Naša prvá "zasmažka" je hotová. Dáme to na tanier.</li>
+                <li class="step">5. Napokon nalejeme do panvice olej, zohrejeme ho a pridáme pásiky červenej repy. Smažíme niekoľko minút. Pridáme soľ, cukor, paradajkový pretlak a citrónovú šťavu. Premiešame, prikryjeme a dusíme do mäkka.</li>
+                <li class="step">6. Keď je fazuľa uvarená, pridáme kapustu a soľ. Po 5 minútach varu pridáme do panvice "zasmažku" s mrkvou a cibuľou. Necháme zmes zovrieť a potom varíme ďalších 5 minút.</li>
+                <li class="step">7. Akonáhle je kapusta uvarená, pridáme do hrnca plátky červenej repy. Boršč varíme 1-2 minúty. Ochutnáme a upravíme množstvo všetkých korenín podľa chute. Vypnene oheň.</li>
+                <li class="step">8. Po 20-30 minútach sa boršč ustáli. Nalejeme ho do tanierov, posypeme bylinkami a podávame. Dobrú chuť!</li>
             </ul>
         </div>
-        <div class="dish">
-            <h2 class="dish_name">A halušky</h2>
+        <div class="dish" id="halusky">
+            <h2 class="dish_name">A Bryndzové halušky</h2>
             <div class="dish_info">
-                <p class="dish_text">- velmi zname ukrainske jedlo, ktore varia vo vsetkych castiach Ukraini... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat veritatis quia velit voluptatem, aspernatur eos qui id tenetur quam deleniti officiis, perspiciatis quo accusamus fuga voluptatum eveniet odio? Rerum eius delectus provident itaque libero dicta? Porro ipsum eveniet at repellat, veniam nisi doloremque commodi assumenda illo harum ipsam aut! Quae?</p>
-                <img src="./imgs/borsc.jpg" alt="" class="dish_img">
+                <p class="dish_text">- sú národné slovenské jedlo, ktoré pozostáva z halušiek, malých zemiakových nokov, a bryndze, čo je jemne solený ovčí syr. Často sa podávajú s opečenou slaninou a poliate vypečenou masťou. 
+                    Pôvodne sa pripravovali v pastierskych komunitách v horských oblastiach Slovenska, kde boli ovce a zemiaky hlavnými surovinami. </p>
+                <img src="./imgs/halusky.jpg" alt="" class="dish_img">
             </div>
             <p class="dish_receptInput">Ak chcete uvarit botsc budete potrebovat:</p>
             <ul class="ingredients">
-                <li class="ingr">Voda 1,5 l</li>
-                <li class="ingr">Fazuľa 100 g</li>
-                <li class="ingr">Cvikla 1 ks</li>
-                <li class="ingr">Mrkva 1 ks</li>
-                <li class="ingr">Cibuľa 1 ks</li>
-                <li class="ingr">Biela kapusta 200 g</li>
-                <li class="ingr">Paradajka 2-3 ks</li>
-                <li class="ingr">Bulharská paprika 1 ks</li>
-                <li class="ingr">Citrónová šťava 1 polievková lyžica</li>
-                <li class="ingr">Bobkový list 2 ks</li>
-                <li class="ingr">Nové korenie 3-4 ks</li>
-                <li class="ingr">Rastlinný olej podľa chuti</li>
-                <li class="ingr">Cesnak podľa chuti</li>
-                <li class="ingr">Zelení podľa chuti</li>
+                <li class="ingr">1 kg zemiakov</li>
+                <li class="ingr">300 g polohrubej múky</li>
                 <li class="ingr">Soľ podľa chuti</li>
-                <li class="ingr">Cukor podľa chuti</li>
-            </ul>
-            <p class="dish_receptInput">Ak chcete uvarit botsc musite ist takimito krokmi:</p>
+                <li class="ingr">250 g bryndze</li>
+                <li class="ingr">smotana (ľubovoľná)</li>
+                <li class="ingr">100 g slaniny</li>
+                <li class="ingr">Masť alebo olej</li>
+            </ul><!-- 1 kg zemiakov
+                - 300 g polohrubej múky
+                - Soľ podľa chuti
+                - 250 g bryndze + smotana (ľubovoľná)
+                - 100 g slaniny
+                - Masť alebo olej na opečenie slaniny -->
+            <p class="dish_receptInput">Recept:</p>
             <ul class="recept">
-                <li class="step">1. V prvej fáze varenia musíme fazuľu uvariť. Cez noc sme ho vopred namočili. Preto z nej scedíme vodu, nalejeme do hrnca, pridáme 1,5 litra vody a dáme variť na oheň.</li>
-                <li class="step">2. Kým sa fazuľa varí, musíme si pripraviť všetku zeleninu na varenie. Čistíme najmä mrkvu, cviklu a cibuľu. Repa a mrkva by mali byť nakrájané na prúžky. Nakrájajte cibuľu nožom, kým nebude vyzerať ako kocky. </li>
-                <li class="step">3. Kapustu umyjeme vodou. Nakrájajte ho nožom na malé prúžky. Paradajky je potrebné skrútiť cez mlynček na mäso. </li>
-                <li class="step">4. Teraz zohrejte panvicu. Tu nalejeme rastlinný olej. Posielame sem cibuľu, ktorú je potrebné vyprážať, kým nebude priehľadná. Potom pridajte pásiky mrkvy a smažte asi 3-4 minúty. Pridajte sladkú papriku a smažte ďalšie 2-3 minúty. Naša prvá pečienka je pripravená. Dáme na tanier. </li>
-                <li class="step">5. Ďalej na panvicu nalejte olej, zohrejte ho, nalejte slamky z cvikly. Smažte niekoľko minút. Tu pridajte soľ, cukor, paradajkový pretlak a citrónovú šťavu. Miešajte, prikryte pokrievkou a dusíme, kým nebude pripravený. </li>
-                <li class="step">6. Keď je fazuľa uvarená, pridáme k nej kapustu a soľ. 5 minút po varení posielame pečenie s mrkvou a cibuľou na panvicu. Nechajte hmotu zovrieť a potom varte ďalších 5 minút. </li>
-                <li class="step">7. Hneď ako je kapusta uvarená, pridáme do panvice kúsky cvikly. Boršč varte 1-2 minúty. Ochutnajte a upravte množstvo všetkých korenín. Vypnite oheň. </li>
-                <li class="step">8. Po 20-30 minútach bol boršč vylúhovaný. Nalejte do tanierov, posypte zeleňou a podávajte.</li>
+                <li class="step">1. Príprava zemiakov:<br> - Zemiaky ošúpte a nastrúhajte na jemno. </li>
+                <li class="step">2. Príprava cesta:<br>- Nastrúhané zemiaky zmiešajte s múkou a pridajte soľ. Vytvorte husté cesto, ktoré sa ľahko odlepuje od lyžice. </li>
+                <li class="step">3. Varenie halušiek:<br>
+                    - Vo veľkom hrnci priveďte do varu osolenú vodu.<br>
+                    - Cesto pretláčajte cez haluškovač (alebo lyžicou) priamo do vriacej vody.<br>
+                    - Halušky varte, kým nevyplávajú na povrch, potom ich ešte nechajte variť 1-2 minúty.<br>
+                    - Uvarené halušky vyberte a prepláchnite studenou vodou. </li>
+                <li class="step">4. Príprava slaniny:<br>
+                    - Slaninu nakrájajte na malé kúsky a opečte ju do chrumkava na masti alebo oleji. </li>
+                <li class="step">5. Dokončenie jedla:<br>
+                    - Uvarené a prepláchnuté halušky zmiešajte s bryndzou, aby sa bryndza roztopila a rovnomerne rozprestrela.<br>
+                    - Na vrch pridajte opečenú slaninu a polejte vypečenou masťou.</li>
             </ul>
         </div>
         <video src="./imgs/cooking.mp4" class="video" controls>
             <source src="./imgs/cooking.mp4" type="video/mp4">
         </video>
     </div>
+    <script src="scroll.js"></script>
 </body>
 </html>
