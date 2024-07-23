@@ -1,16 +1,15 @@
-let lastScroll = 0
-const defaultOffset = 50
-const header = document.querySelector('.header')
+let menuBtn = document.querySelector('.menu-icon');
+let menu = document.querySelector('.nav');
+let menuItem = document.querySelectorAll('.nav__link');
 
-const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop
-const containHide = () => header.classList.contains('hide')
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+    menu.classList.toggle('active');
+})
 
-window.addEventListener('scroll', () => {
-    if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-        header.classList.add('hide')
-    }
-    else if(scrollPosition() < lastScroll && containHide()){
-        header.classList.remove('hide')
-    }
-    lastScroll = scrollPosition()
+menuItem.forEach (function(menuItem) {
+    menuItem.addEventListener('click',function(){
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+    })
 })

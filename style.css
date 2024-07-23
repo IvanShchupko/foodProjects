@@ -10,91 +10,129 @@
 body {
     background-color: #9797ff; 
     color: #fff;
+    font-family: "Passion One", sans-serif;
 }
-.header{
+
+.k-header {
+    position: fixed;
+    background-color: #222247;
+    border-radius: 0 0 20px 20px;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 50;
+}
+
+.k-header-logo {
+    position: absolute;
+    width: 120px;
+    margin-left: 20px;
+    z-index: 7;
+    font-size: 27px;
+    font-family: "Passion One", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px;
+}
+.k-header__box {
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.k-header__box-name {
+    font-size: 25px;
+    font-family: "Passion One", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    z-index:10;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.menu-icon div {
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+.menu-icon div:nth-of-type(1) {
+    top: calc(50% - 9px);
+}
+.menu-icon div:nth-of-type(3) {
+    top: calc(50% + 9px);
+}
+.menu-icon.active div:nth-of-type(2) {
+    display: none;
+}
+.menu-icon.active div:nth-of-type(1) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-icon.active div:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+.nav {
     position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
+    left: 0;
     width: 100%;
-    background-color: #222247;
+    height: 100vh;
+    padding: 15px;
+    background: #222247;
+    transform: translateX(100%);
+    transition: 0.5s; 
+    z-index: 6;
+    border-radius: 70% 0 70% 50%;
+}
+.nav.active {
+    transform: translateX(0);
+    border-radius: 0;
+}
+.nav__box {
+    margin-top: 150px;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
     display: flex;
-    z-index: 1;
+    justify-content:space-between;
     align-items: center;
-    padding: 0 20px;
-    transition: 0.5s;
-    color: #fff;
-    font-size: 40px;
-}
-.header.hide {
-    transform: translateY(-150px);
-}
-
-.head_home {
-    font-size: 60px;
-    color: #fff;
-    transition: 0.5s;
-}
-.head_list {
-    width: 65%;
-    display: flex;
-    justify-content: space-between;
-}
-.head_point {
-    color: #fff;
-    transition: 0.5s;
-}
-
-/* .prolog, .food{
-    width: 600px;
-    font-size: 25px;
-    text-align: center;
-    margin: 50px auto;
-}
-.banner{
-    height: 150px;
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 30px;
-}
-.nav{
-    border: 1px solid #000;
-    margin-top: 20px;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-.link{
-    color: #fff;
-    font-size: 25px;
-}
-.infoBlock{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-.weBlock{
-    background-color: #6b6bda;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px;
-    height: 500px;
-    display: flex;
     flex-direction: column;
 }
-.blockImg{
-    width: 150px;
-    height: 150px;
+.nav__box-name{
+    font-size: 45px;
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 30px;
 }
-.blockText{
-    font-size: 30px;
-} */
+
+
+
+
+
+
+
+
 .prologe {
-    margin: 150px auto;
+    margin: 0 auto;
+    padding: 150px 0;
     font-size: 35px;
     text-align: center;
     width: 600px;
@@ -234,6 +272,9 @@ body {
     .head_list {
         width: 75%;
     }
+    .k-header {
+        height: 14vh;
+    }
 }
 @media(max-width: 650px){
     .prologe {
@@ -260,7 +301,13 @@ body {
         display: none;
     }
     .prologe {
-        margin: 50px auto;
+        margin: 0px auto;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .k-header__box-name {
+        display: none;
     }
 }
 @media(max-width: 400px){
